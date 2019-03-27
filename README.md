@@ -11,3 +11,7 @@ sudo find laravel_project type d -exec chmod 664 {} \;
 ```
 sudo find laravel_project type f -exec chmod 775 {} \;
 ```
+### Set permission 777 storage
+```
+sudo chmod -R storage
+```
