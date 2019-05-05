@@ -11,6 +11,12 @@ grant CONNECT, TEMPORARY, CREATE on database my_database to my_user or my_role;
 ```
 grant all privileges on database my_table to my_user or my_role;
 ```
+## Grant in schema
+```
+grant all privileges on all tables in schema public to my_user or my_role;
+
+grant all privileges on all sequences in schema public to my_user or my_role;
+```
 ## Revoke privileges
 ```
 revoke CONNECT, TEMPORARY, CREATE on database my_database from my_user or my_role;
@@ -18,4 +24,10 @@ revoke CONNECT, TEMPORARY, CREATE on database my_database from my_user or my_rol
 ## Revoke all privileges
 ```
 revoke all privileges on database my_table on my_database or my_role;
+```
+## Revoke in schema
+```
+revoke all privileges on all tables in schema public from my_user or my_role;
+
+revoke all privileges on all sequences in schema public from my_user or my_role;
 ```
