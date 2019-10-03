@@ -15,3 +15,11 @@ sudo find laravel_project -type f -exec chmod 775 {} \;
 ```
 sudo chmod -R 777 storage
 ```
+### Migrate 
+```
+php artisan migrate:refresh
+```
+#### Only one table
+```
+php artisan migrate:refresh --path=database/migrations/table_name
+```
