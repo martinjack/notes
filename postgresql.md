@@ -41,3 +41,12 @@ revoke all privileges on all sequences in schema public from my_user or my_role;
 ```
 COPY table_name FROM 'table.csv' DELIMITER ',' CSV HEADER;
 ```
+
+## Search duplicate
+```
+SELECT name, COUNT(id)
+FROM table
+GROUP BY name
+HAVING COUNT(id) > 1
+ORDER BY COUNT(id);
+```
