@@ -30,3 +30,7 @@ git remote add origin url_git
 git push -u origin --all
 git push -u origin --tags
 ```
+# Change Git Remote URL
+```sh
+git remote set-url origin url_git
+```
